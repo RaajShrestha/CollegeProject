@@ -1,0 +1,26 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.ayp{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 15px;
+}
+#inputFile[type="file"]{
+    color: transparent;
+}
+#output{
+    border-radius: 50%;
+}
+.image-upload>input {
+  display: none;
+}
+textarea{
+    resize: none;
+}
+input[type="checkbox"]{
+    margin-top: 6px;
+    margin-right: 5px;
+}

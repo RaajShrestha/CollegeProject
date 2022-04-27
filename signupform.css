@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+:root {
+    --blue: rgb(97, 197, 243);
+    --light-grey: rgb(196, 105, 105);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+h2{
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(1%, 3vw, 10%);
+}
+.container-signup{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 15px 20px 20px black;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5%;
+}
+.facebook{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 30px 0 10px 0;
+    background: rgba(66, 103, 178,.7);
+    padding: 5px 7px;
+    width: 100%;
+}
+#facebook-img{
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+#facebook-div{
+    font-size: 15px;
+}
+.gmail{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 10px 0;
+    background: rgba(250, 250, 250, .5);
+    padding: 5px 7px;
+    width: 100%;
+}
+#gmail-img{
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    transform: scaleX(1.2);
+}
+#gmail-div{
+    font-size: 15px;
+}
+#signup-logo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    cursor: pointer;
+    box-shadow: 6px 4px burlywood;
+    padding: 0px;
+    height: fit-content;
+    width: fit-content;
+    margin: 10px auto;
+}
+#signup-logo:hover{
+    box-shadow: 7px 5px rgb(223, 180, 124);
+}
+#signup-logo::first-letter{
+    padding: 0 7px;
+    background: darkgreen;
+    color: white;
+    background-size: 2em;
+    border-radius: 50%;
+}
+#line{
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+#line::before{
+    content: "";
+    height: 1px;
+    width: 45%;
+    display: block;
+    position: absolute;
+    background:white;
+    top: 50%;
+    left: 0;
+}
+#line::after{
+    content: "";
+    height: 1px;
+    width: 45%;
+    display: block;
+    position: absolute;
+    background: white;
+    top: 50%;
+    right: 0;
+}
+.userpass-signup{
+    display: block;
+}
+.userpass-signup{
+    width: 100%;
+    margin: 20px 0;
+    height: 40px;
+    outline: none;
+    font-size: large;
+    color: black;
+}
+.userpass-signup:focus{
+    outline: 1.5px solid green;
+}
+#pass_sign, #pass_sign1{
+    padding: 0 40px 0 35px;
+}
+#user-sign{
+    padding: 0 15px 0 35px ;
+}
+.gmail, .facebook{
+    cursor: pointer;
+}
+.gmail:hover , .facebook:hover{
+    opacity: .5;
+}
+
+#user-img,#pass-img{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    margin: 8px 0 0 5px;
+}
+#pass-img1{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    margin: 28px 0 0 5px;
+}
+#signup-btn{
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    background: rgba(220,144,150, .5);
+    cursor: pointer;
+    font-size: clamp(14px, 4vw, 20px);
+    font-weight: bold;
+}
+#signup-btn:hover{
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+    font-size: x-large;
+}
+.passimage-signup{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+#hidepass-signup{
+    visibility: hidden;
+}
+
+#checkbox{
+    text-align: center;
+    height: 15px;
+    width: 15px;    
+    margin: 5px 10px;
+}
+small{
+    color: black;
+    cursor: context-menu;
+}
+a{
+    color: blue;
+}
+a:visited{
+    color: darkblue;
+}
+
+.show_pass{
+    display: flex;
+    justify-content: flex-end;
+}
+label{
+    color: black;
+    font-weight: 700;
+    font-size: clamp(12px, 3vw, 16px);
+}
+#show_pass{
+    width: 15px;
+    height: 15px;
+}
+
+
+h1{
+    text-decoration: underline;
+    color: black;
+    font-size: clamp(16px, 5vw, 30px);
+    text-align: center;
+}
+
+em{
+    color: red;
+    margin: 0;
+    text-align: center;
+}
+code{
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 5px 20px;
+    /* background: black; */
+}

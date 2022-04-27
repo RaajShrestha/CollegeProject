@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    cursor: pointer;
+    box-shadow: 6px 4px burlywood;
+    padding: 0px;
+    width: min-content;
+    margin: 20px auto;
+}
+#logo:hover{
+    box-shadow: 7px 5px rgb(223, 180, 124);
+}
+#logo::first-letter{
+    padding: 0 7px;
+    background: darkgreen;
+    color: white;
+    background-size: 2em;
+    border-radius: 50%;
+}
+
+/* Body of the content */
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 2% 5%;
+}
+h1{
+    text-align: center;
+}
+.wrapper{
+    display: block;
+    margin-top: 20px;
+    padding: 2%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .4);
+}
+section{
+    margin-top: 30px;
+}
+label{
+    font-size: clamp(20px, 4vw, 30px);
+    margin-inline: 5px;
+    /* color: white; */
+}
+span{
+    font-size: clamp(14px, 3vw, 20px);
+    padding-left: 100px;
+}
+input[type='text'], input[type='password'], input[type='email']{
+    padding: 10px;
+    font-size: clamp(12px, 3vw, 20px);
+    outline: none;
+    width: 100%;
+}
+.nameFML{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10px;
+}
+#address{
+    width: 100%;
+}
+input[type='radio']{
+    height: 15px;
+    width: 15px;
+    margin-right: 15px;
+}
+.gender{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.backNext{
+    padding: 5px;
+    color: white;
+    width: 100px;
+    background: blue;
+    font-size: clamp(15px, 4vw, 20px);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.backNext:hover{
+    background: rgba(0, 0, 255, .5);
+}
+
+
+/* Registration 2 */
+.nextBack{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The skill Categories */
+
+
+textarea#skill-area{
+    resize: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: clamp(12px, 3vw, 20px);
+    outline: none;
+    height: min-content;
+}
+textarea#desc{
+    height: 20vh;
+    resize: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: clamp(12px, 3vw, 20px);
+    outline: none;
+}
+#desc:focus, #skill-area:focus , input[type='text']:focus, input[type='email']:focus, input[type='password']:focus{
+    outline: 1px solid darkgreen;
+}
+textarea, input{
+    border: none;
+}
+
+
+/* Registration 3 */
+.profile{
+    display: flex;
+    justify-content: center;
+}
+.ayp{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 15px;
+}
+#inputFile[type="file"]{
+    color: transparent;
+}
+#output{
+    border-radius: 50%;
+}
+.image-upload>input {
+  display: none;
+}
+
+
+/* Social Media connect */
+
+.facebook,.gmail{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 10px auto 10px;
+    background: rgba(66, 103, 178,.7);
+    padding: 5px 7px;
+    width: clamp(200px, 50vw, 500px);
+}
+#facebook-img,#gmail-img{
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+#facebook-div,#gmail-div{
+    font-size: clamp(12px, 3vw, 20px);
+}
+.gmail{
+    background: rgba(250, 250, 250, .5);
+}
+
+.gmail, .facebook{
+    cursor: pointer;
+}
+.gmail:hover , .facebook:hover{
+    opacity: .5;
+}
+
+
+/* Only for Back button */
+#back_sign{
+    position: absolute;
+    left: 9%;
+    width: clamp(20px, 4vw, 30px);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+#back_sign:hover{
+    left: 8%;
+}
+
+
+
+#second{
+    display: none;
+}
+#third{
+    display: none;
+}

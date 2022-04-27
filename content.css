@@ -1,0 +1,142 @@
+/* content container */
+.content-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin-top: clamp(200px, 15vw, 300px);
+    flex-direction: column;
+    padding: 20px  80px;
+    max-width: 90vw;
+    width: 60vw;
+    height: max-content;
+    z-index: 1;
+}
+.first-content{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 50px;
+    color: green;
+    font-size: 300%;
+}
+.first-content-heading{
+    color: black;
+    font-size: 200%;
+}
+.first-content-paragraph{
+    font-size: 20px;
+    color: black;
+}
+.first-content-paragraph::before{
+    content: '\a' '\a';
+    white-space: pre-line;
+}
+.buttons{
+    display: flex;
+    padding-right: 15%;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+.buttonhf{
+    width: clamp(300px, 100%, 700px);
+    height: 3em;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+}
+.buttonhf:hover{
+    opacity: .5;
+}
+.hire{
+    background: rgba(7, 2, 2, 0.8);
+    color: white;
+    border: none;
+}
+.space{
+    background-color: transparent;
+    height: 25px;
+}
+
+
+@media(max-width:1200px){
+    div b,div .paragraph,div .buttonhf{
+        font-size: 90%;
+    }
+    div .heading{
+        font-size: 150%;
+    }
+    div .first-content{
+        font-size: 250%;
+    }
+    .buttonhf {
+        height: 40px;
+    }
+    .buttons{
+        padding-right: 0;
+    }
+}
+@media(max-width:1000px){
+    div b,div .buttonhf{
+        font-size: 90%;
+    }
+    div .heading{
+        font-size: 120%;
+    }
+    div .first-content{
+        font-size: 220%;
+    }
+    .buttonhf {
+        height: 40px;
+        width: 150px;
+    }
+}
+@media(max-width:900px){
+    div .first-content{
+        font-size: 200%;
+    }
+    .buttonhf{
+        margin-inline: 20px;
+        margin-left: 0;
+    }
+}
+@media(max-width:720px){
+    div b,div .buttonhf{
+        font-size: 65%;
+    }
+    div .heading{
+        font-size: 90%;
+    }
+    .content-container{
+        width: 90vw;
+    }
+    .buttonhf{
+        width: clamp(200px, 60%, 600px);
+    }
+    .buttons{
+        padding-right: 20%;
+    }
+}
+@media(max-width:650px){
+    div .first-content{
+        font-size: 150%;
+    }
+    .buttons{
+        display: block;
+        padding-right: 0;
+    }
+    .buttonhf {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 30px;
+        width: 100%;
+    }
+}
+@media (max-width:550px){
+    .content-container{
+        width: 90vw;
+        margin: max-content 0;
+        padding: 0px 20px;
+    }
+}

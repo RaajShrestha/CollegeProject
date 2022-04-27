@@ -1,0 +1,141 @@
+#containerForm{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+    animation: right-to-left .5s ease-in-out forwards;
+    transition-duration: 4s;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    z-index: 1;
+}
+@keyframes right-to-left{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#tableForm{
+    border: 1px solid black;
+    border-spacing: 20px;
+    height: 30vh;
+    margin-bottom: 50px;
+}
+.userpass{
+    outline: none;
+    height: 35px;
+    padding: 0 1.5pc;
+}
+#email-img{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+.passimage{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+small{
+    cursor: context-menu;
+}
+#hidepas{
+    visibility: hidden;
+}
+.loginBackBtn{
+    cursor: pointer;
+}
+.loginBackBtn:hover{
+    opacity: .7;
+}
+
+#fieldset{
+    padding: 25px 20px;
+    width: fit-content;
+    background: rgba(150, 150, 150);
+    height: fit-content;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-size: cover;
+    border: none;
+}
+legend{
+    text-align: center;
+    background: whitesmoke;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+#backForm{
+    margin-left: 10px;
+}
+#loginForm{
+    margin-right: 10px;
+}
+#backForm, #loginForm{
+    border: none;
+    border-radius: 10px;
+    padding: 5px 12px;
+    font-weight: bold;
+}
+tr td a{
+    color: blue;
+    font-size: 12px;
+    text-decoration: underline;
+}
+tr td a:hover{
+    color: darkblue;
+}
+tr td label{
+    font-size: 18px;
+}
+
+input:focus{
+    outline: 1px solid black;
+}
+
+
+#profile{
+    width: 40px;    
+    height: 40px;
+    position: absolute;
+    left: 20px;
+}
+@media (max-width:425px){
+    #profile{
+        display: none;
+    }
+}
+
+@media (max-width: 720px){
+    tr td label{
+        font-size: 150%;
+    }
+    #containerForm{
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: top-to-bottom .3s ease-in-out forwards;
+    }
+    @keyframes top-to-bottom{
+        0%{
+            transform: translateY(-50%);
+        }
+        100%{
+            transform: translateY(5%);
+        }
+    }
+}

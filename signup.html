@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signupform.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h2 id="signup-logo">fEmployee</h2>
+    <hr>
+    <div class="container-signup">
+        <h1>SignUp</h1>
+        <form id="signupForm" action="signup.php" method="post" name="signup_form">
+
+            <div class="facebook">
+                <img src="images/facebook.png" alt="images" id="facebook-img">
+                <b id="facebook-div">Continue with Facebook</b>
+            </div>
+            <div class="gmail">
+                <img src="images/gmail.png" alt="images" id="gmail-img">
+                <b id="gmail-div">Continue with Gmail</b>
+            </div>
+            <h4 id="line">or</h4>
+            <div class="userpass-signup-container">
+
+                <img src="images\outline_email_black_24dp.png" id="user-img" alt="">
+                <input placeholder="enter your email" class="userpass-signup" type="text" name="email" id="user-sign">
+
+                <img src="images\outline_lock_black_24dp.png" id="pass-img" alt="">
+                <input placeholder="enter your password" class="userpass-signup" type="password" name="password" id="pass_sign" class="inputpass">
+
+                <div class="show_pass">
+                    <input type="checkbox" name="show_pass" id="show_pass">
+                    <label for="show_pass" id="passwordShower" onclick="showsign()">Show Password</label>
+                </div>
+                <img src="images\outline_lock_black_24dp.png" id="pass-img1" alt="">
+                <input placeholder="Confirm your password" class="userpass-signup" type="password" name="repassword" id="pass_sign1" class="inputpass">
+                <code id="error"><em id="password_error" align="center"></em></code>
+                <br>
+                <br>
+                <input class="check-signup" type="radio" name="checkbox" id="checkbox">
+                <small onclick="checked()"> I agree to the Freelancer User Agreement and </small>
+                <small><a id="privacy-policy" href="privacyPolicy.html">Privacy Policy</a>.</small>
+                <br>
+
+                <input type="submit" id="signup-btn" name="submit" onclick="create_account()" value="SignUp">
+
+            </div>
+        </form>
+    </div>
+    <!-- <script src="C:\Users\sg606\OneDrive\Desktop\College Project\script.js"></script> -->
+    <script>
+        // To show or hide the password from the user
+        function showsign() {
+            var x = document.signup_form.password;
+            var y = document.getElementById('show_pass');
+            if (x.type === "password"){
+                x.type = "text";
+                document.getElementById('passwordShower').style.color = 'green'
+            } else {
+                x.type = "password";
+                document.getElementById('passwordShower').style.color = 'red'
+            }
+        }
+
+        // let check = document.getElementById('checkbox');
+        function checked() {
+            if (document.getElementById("checkbox").checked == false) {
+                document.getElementById("checkbox").checked = true;
+            } else {
+                document.getElementById("checkbox").checked = false;
+            }
+        }
+
+        // Form Validation 
+
+        // const formSubmit = document.getElementById('signupForm');
+        // formSubmit.addEventListener('submit', (e) => {
+        //     e.preventDefault()
+        // })
+
+
+        function create_account() {
+            var e = document.signup_form.email.value;
+            var p = document.signup_form.password.value;
+            var cp = document.signup_form.repassword.value;
+
+            var letters = /^[A-Z a-z]+$/;
+            var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+            if(e == '' || p == ''){
+                alert("You have to fill all the boxes...");
+            } else if (!email_val.test(e)) {
+                alert("Invalid email format please enter a valid email id ...");
+            } else {
+                return true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

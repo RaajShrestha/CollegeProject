@@ -1,0 +1,35 @@
+.last-content{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    background: #ffffff;
+    padding: 10px 10px 80px 10px;
+    background: whitesmoke;
+    column-count: auto;
+    height: 100%;
+}
+.heading-info{
+    margin: auto;
+    width: 100%;
+    color: green;
+    background: rgba(4, 87, 87, .3);
+    border-radius: 5px;
+    padding: 10px;
+}
+h3,h5{
+    margin: 12px;
+}
+h5::before,h3::before{
+    content: '\a';
+    white-space: pre;
+}
+.material-icons{
+    margin: 0 10px;
+}
+
+
+@media (max-width: 400px){
+    .last-content{
+        grid-template-columns: minmax(20px,1fr);
+    }
+}

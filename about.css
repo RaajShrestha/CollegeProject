@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: rgb(97, 197, 243);
+    --light-grey: lightgrey;
+}
+/* The logo */
+#logo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    cursor: pointer;
+    box-shadow: 6px 4px burlywood;
+    padding: 0px;
+    margin: 0;
+    width: min-content;
+    height: min-content;
+    font-size: clamp(15px, 3vw, 20px);
+}
+#logo:hover{
+    box-shadow: 7px 5px rgb(223, 180, 124);
+}
+#logo::first-letter{
+    padding: 0 7px;
+    background: darkgreen;
+    color: white;
+    background-size: 2em;
+    border-radius: 50%;
+}
+
+/* Header of the Content */
+header{
+    background: var(--blue);
+    display: flex;
+    margin: 20px 0;
+    padding: .7em 3%;
+    justify-content: space-between;
+}
+#contact_btn{
+    padding: 4px 8px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: clamp(15px, 3vw, 20px);
+    background: black;
+    margin-right: 2%;
+    cursor: pointer;
+}
+#contact_btn:hover, nav ul li:hover, header ul li:hover{
+    opacity: .7;
+}
+
+/* Body Container */
+.container{
+    width: 100%;
+    height: 100%;
+}
+.about-us{
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+    font-size: clamp(10px, 5vw, 30px);
+    margin-right: 10%;
+}
+span:first-child{
+    margin-right: 2vw;
+}
+.socialMedia{
+    width: 4vw;
+    max-width: 30px;
+    height: 100%;
+    margin: 0 2vw;
+    cursor: pointer;
+}
+.socialMedia:hover{
+    transform: scale(1.2);
+}
+
+
+/* last content */
+.content{
+    display: grid;
+    gap: 15px;
+    padding: 2% 10% 2% 5%;
+    grid-template-columns: repeat(auto-fit,minmax(1fr));
+}
+.last-content{
+    /* border: 3px solid grey;
+    box-shadow: 3px 3px 3px black; */
+    background: white;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    margin: 0 10px;
+    text-align: justify;
+    font-weight: 500;
+    font-size: clamp(12px, 3vw, 20px);
+}
+h3{
+    color: green;
+    background: rgba(4, 87, 87, .3);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: clamp(16px, 4vw, 30px);
+}
+
+#back_sign{
+    position: absolute;
+    margin-top: 20px;
+    left: 9%;
+    width: clamp(20px, 4vw, 30px);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+#back_sign:hover{
+    left: 8%;
+}

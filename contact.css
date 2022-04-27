@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --blue: rgb(97, 197, 243);
+    --light-grey: lightgrey;
+}
+#logo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    cursor: pointer;
+    box-shadow: 6px 4px burlywood;
+    padding: 0px;
+    width: min-content;
+    margin: 10px auto;
+}
+#logo:hover{
+    box-shadow: 7px 5px rgb(223, 180, 124);
+}
+#logo::first-letter{
+    padding: 0 7px;
+    background: darkgreen;
+    color: white;
+    background-size: 2em;
+    border-radius: 50%;
+}
+
+
+/* Container Field */
+.container{
+    background: var(--blue);
+    width: 100%;
+    height: 100%;
+}
+
+/* Content Section */
+.content{
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+.contact-us{
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    resize: none;
+    border: 3px solid black;
+}
+.content span, p{
+    font-size: clamp(12px, 2vw, 20px);
+    text-align: center;
+}
+span:first-child{
+    margin-right: 30px;
+}
+b{
+    text-align: center;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+b::before{
+    content: "";
+    height: 1px;
+    width: 45%;
+    display: block;
+    position: absolute;
+    background: black;
+    top: 50%;
+    left: 0;
+}
+b::after{
+    content: "";
+    height: 1px;
+    width: 45%;
+    display: block;
+    position: absolute;
+    background: black;
+    top: 50%;
+    right: 0;
+}
+#submit{
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: clamp(12px, 4vw, 18px);
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid black;
+}
+#submit:hover{
+    opacity: .7;
+}
+
+/* Last content */
+.last-section{
+    /* background: black; */
+    color: black;
+    width: 100%;
+    height: fit-content;
+    padding: 3% 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+.chat{
+    display: flex;
+    align-items: flex-end;
+}
+.chat img{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.h3{
+    font-weight: 700;
+    font-size: clamp(15px, 5vw, 30px);
+}
+#chat-section{
+    order: 1;
+    padding: 3px;
+    width: clamp(200px, 50vw, 400px);
+    background: orangered;
+    visibility: hidden;
+    position: absolute;
+    left: 20%;
+}
+.chatBot{
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+#chat{
+    box-sizing: border-box;
+    order: 2;
+    padding: 5px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    width: 100%;
+    height: min-content;
+}
+#chatContent{
+    resize: none;
+    height: 150px;    
+}
+
+#back_sign{
+    position: absolute;
+    margin-top: 20px;
+    left: 9%;
+    width: clamp(20px, 4vw, 30px);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+#back_sign:hover{
+    left: 8%;
+}

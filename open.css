@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+/* Logo of the content */
+#logo{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    cursor: pointer;
+    box-shadow: 6px 4px burlywood;
+    padding: 0px;
+    width: min-content;
+    margin: auto;
+    margin-bottom: 10px;
+}
+#logo:hover{
+    box-shadow: 7px 5px rgb(223, 180, 124);
+}
+#logo::first-letter{
+    padding: 0 7px;
+    background: darkgreen;
+    color: white;
+    background-size: 2em;
+    border-radius: 50%;
+}
+/* Main container of the page */
+.container{
+    padding: 2% 5%;
+    border-radius: 10px;
+}
+form{
+    display: block;
+    margin-top: 20px;
+    padding: 2%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .4);
+}
+
+/* Top heading */
+h3{
+    font-weight: bolder;
+    font-size: clamp(20px, 4vw, 30px);
+    text-align: center;
+    margin: 0px 0 20px 0;
+    text-decoration: underline;
+}
+hr{
+    margin: auto;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* Body Content */
+.body-content{
+    padding: 0 5%;
+    width: 100%;
+    height: fit-content;
+}
+label{
+    font-size: clamp(13px, 3vw, 20px);
+    margin-left: 10px;
+}
+input{
+    width: 100%;
+    outline: none;
+    font-size: clamp(12px, 3vw, 15px);
+    padding: 10px 20px;
+}
+textarea{
+    font-size: clamp(12px, 3vw, 15px);
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+}
+#submit{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .5);
+    font-size: clamp(12px, 4vw, 20px);
+    background: rgba(0, 200, 0, .3);
+    color: white;
+    font-weight: bolder;
+}
+#submit:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .4) inset;
+}
+input:focus, textarea:focus{
+    outline: 1px solid darkgreen;
+}

@@ -1,0 +1,152 @@
+/* The Navigation Bar */
+nav{
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
+#profile1{
+    width: clamp(30px, 2vw, 80px);
+    height: clamp(30px, 2vw, 80px);
+}
+#profile{
+    width: clamp(50px, 4vw, 100px);
+    height: clamp(50px, 4vw, 100px);
+    cursor: pointer;
+}
+#profile:hover{
+    transform: scale(1.1);
+}
+#threeLine{
+    display: block;
+}
+
+
+/* Content Field */
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 2% 5%;
+    background: whitesmoke;
+}
+fieldset{
+    padding: 2% 5%;
+    border: none;
+    width: 100%;
+}
+
+.user{
+    display: flex;
+}
+.data{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.data a{
+    color: green;
+    text-decoration: underline;
+}
+
+
+.skill{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+
+.skillName{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.skillDesc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+}
+label{
+    font-size: clamp(14px, 4vw, 18px);
+}
+textarea{
+    padding: 2%;
+    font-size: clamp(12px, 3vw, 16px);
+    resize: none;
+    width: 100%;
+    height: 200px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.workingHistory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.working-history{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+.company{
+    margin: 20px 0;
+    border: 1px solid wheat;
+    width: 70%;
+    padding: 20px 10px;
+}
+
+
+.portfolio{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto;
+}
+.add-port{
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plus-icon{
+    width: clamp(100px, 15vw, 200px);
+    height: clamp(100px, 15vw, 200px);
+}
+#inputFile[type="file"]{
+    color: transparent;
+}
+.image-upload>input {
+    display: none;
+}
+#output{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    display: none;
+}
+strong{
+    font-size: clamp(14px ,3vw, 18px);
+}
+p{
+    font-size: clamp(10px ,3vw, 15px);
+}
+h2{
+    font-size:clamp(16px, 4vw, 20px)
+}
+h1{
+    font-size: clamp(18px, 6vw, 25px);
+}
+
+@media (max-width:500px){
+    .skill, .portfolio{
+        grid-template-columns: auto;
+    }
+}
+img{
+    border-radius: 50%;
+}
+
+
+.edit{
+    cursor: pointer;
+}

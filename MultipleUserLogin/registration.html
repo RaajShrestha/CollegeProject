@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using Regular Expression in PHP</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    form{
+        transform: scale(1.5);
+        margin-top: 80px;
+    }
+    form input{
+        outline: 1px solid red ;
+        border: none;
+    }
+    form input:focus{
+        outline: 1px solid green;
+    }
+    form input:last-child{
+        outline: 1px solid black;
+    }
+</style>
+<body>
+    <h1>Sign Up Form</h1>
+    <form action="registration.php" name="form" method="post">
+        Name: <br>
+        <input type="text" name="name" id="name"><br><br>
+        Email: <br>
+        <input type="email" name="email" id="email"><br><br>
+        Password: <br>
+        <input type="password" name="password" id="password"><br><br>
+        Confirm Password: <br>
+        <input type="password" name="repassword" id="repassword"><br><br>
+
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+</body>
+</html>
